@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --account=cis431_531
+#SBATCH --partition=fat
+#SBATCH --job-name=main
+#SBATCH --output=main_%j.out
+#SBATCH --error=main_%j.err
+#SBATCH --time=00:30:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+
+./main

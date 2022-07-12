@@ -1,0 +1,1 @@
+Link to Fashion MNIST data: https://www.kaggle.com/datasets/zalando-research/fashionmnist 

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#SBATCH --account=cis431_531
+#SBATCH --partition=fat
+#SBATCH --job-name=main_par_layer
+#SBATCH --output=main_par_layer_%j.out
+#SBATCH --error=main_par_layer_%j.err
+#SBATCH --time=00:15:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=7
+
+export OMP_NUM_THREADS=7
+export OMP_PROC_BIND=true
+
+./main_par_layer
+./main_par_layer
